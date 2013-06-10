@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["zolzaya.erdenebaatar@gmail.com"]
   spec.description   = %q{Omniauth wrapper}
   spec.summary       = %q{Omniauth wrapper}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/zolzaya/omniauth-wrapper"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
