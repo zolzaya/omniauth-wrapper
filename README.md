@@ -1,6 +1,6 @@
 # Omniauth::Wrapper
 
-TODO: Write a gem description
+Simple Omniauth hash wrapper for Facebook.
 
 ## Installation
 
@@ -18,7 +18,13 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+``` ruby
+  @wrapper = Omniauth::Wrapper.init(auth_hash)
+  @wrapper.provider # returns provider
+  @wrapper.access_token # returns access token
+  @wrapper.uid # returns uid
+  @wrapper.token_expires_at # returns expires ad
+```
 
 ## Contributing
 
