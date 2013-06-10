@@ -1,0 +1,54 @@
+{
+  "provider": "facebook",
+  "uid": "100000730417342",
+  "info": {
+            "nickname": "foo.bar",
+            "email": "email@gmail.com",
+            "name": "Foo Bar",
+            "first_name": "Foo",
+            "last_name": "Bar",
+            "image": "http://graph.facebook.com/100000730417342/picture?type=square",
+            "description": "Lorem lorem lorem",
+            "urls": {
+                "Facebook": "http://www.facebook.com/foo.bar"
+            },
+            "location": "Kyiv, Ukraine",
+            "verified": true
+        },
+  "credentials": {
+            "token": "AAAC1N4JHfIcBAIDYp0QLdyCMX9LenAS6KNDrGNZAOQ8bOYObHSg3tgxzvEVNLOTCZBOHDUCcHDxINgluKw52CLxMMZAxHaPXqAwZABMqhgZDZD",
+            "expires_at": 1369429974,
+            "expires": true
+  },
+  "extra": {
+    "raw_info": {
+      "id": "100000730417342",
+      "name": "Foo Bar",
+      "first_name": "Foo",
+      "last_name": "Bar",
+      "link": "http://www.facebook.com/foo.bar",
+      "username": "foo.bar",
+      "hometown": {
+          "id": "108505112504762",
+          "name": "Myronivka"
+      },
+      "location": {
+          "id": "111227078906045",
+          "name": "Kyiv, Ukraine"
+      },
+      "bio": "Lorem lorem lorem",
+      "quotes": "Lorem lorem lorem lorem ...",
+      "work": [],
+      "favorite_teams": [],
+      "favorite_athletes": [],
+      "education": [],
+      "gender": "male",
+      "email": "mail@gmail.com",
+      "timezone": 2,
+      "locale": "en_US",
+      "languages": [],
+      "verified": true,
+      "updated_time": "2013-03-24T21:02:30+0000"
+    }
+  }
+}
