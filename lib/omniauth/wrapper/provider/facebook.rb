@@ -22,6 +22,14 @@ module Omniauth
           @credentials ||= (auth_hash['credentials'] || {})
         end
 
+        def extra
+          @extra ||= (auth_hash['extra'] || {})
+        end
+
+        def info
+          @extra ||= (auth_hash['info'] || {})
+        end
+
         def access_token
           @access_token ||= credentials['token']
         end
@@ -31,10 +39,10 @@ module Omniauth
         end
 
         protected
-          def parse_datetime(value)
-            return nil if value.nil? || value.to_i.zero?
-            Time.at(value.to_i).to_datetime
-          end
+        def parse_datetime(value)
+          return nil if value.nil? || value.to_i.zero?
+          Time.at(value.to_i).to_datetime
+        end
       end
     end
   end

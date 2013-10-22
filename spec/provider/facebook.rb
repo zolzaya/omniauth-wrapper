@@ -24,5 +24,25 @@ describe Omniauth::Wrapper::Provider::Facebook do
     its(:provider) { should eq "facebook" }
     its(:access_token) { should eq "AAAC1N4JHfIcBAIDYp0QLdyCMX9LenAS6KNDrGNZAOQ8bOYObHSg3tgxzvEVNLOTCZBOHDUCcHDxINgluKw52CLxMMZAxHaPXqAwZABMqhgZDZD" }
     its(:token_expires_at) { should eq Time.at("1369429974".to_i).to_datetime }
+
+    its 'info[:nickname] should be "foo.bar"' do
+      subject.info['nickname'].should eq 'foo.bar'
+    end
+
+    its 'info[:email] should be "email@gmail.com"' do
+      subject.info['email'].should eq 'email@gmail.com'
+    end
+
+    its 'info[:name] should be "Foo Bar"' do
+      subject.info['name'].should eq 'Foo Bar'
+    end
+
+    its 'info[:first_name] should be "Foo"' do
+      subject.info['first_name'].should eq 'Foo'
+    end
+
+    its 'info[:last_name] should be "Bar"' do
+      subject.info['last_name'].should eq 'Bar'
+    end
   end
 end
